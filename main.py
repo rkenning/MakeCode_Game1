@@ -1,3 +1,6 @@
+from pickle import FALSE
+
+
 @namespace
 class SpriteKind:
     Projectile2 = SpriteKind.create()
@@ -16,7 +19,7 @@ def on_on_overlap(sprite, otherSprite):
                     . . 2 2 2 2 . .
         """),
         SpriteKind.projectile)
-    falling.set_bounce_on_wall(True)
+    falling.set_bounce_on_wall(False)
     falling.set_position(sprite.x, sprite.y - 5)
     falling.set_velocity(sprite.vx, 0 - sprite.vy)
     falling.ay = sprite.ay
