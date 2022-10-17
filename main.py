@@ -1,6 +1,3 @@
-from pickle import FALSE
-
-
 @namespace
 class SpriteKind:
     Projectile2 = SpriteKind.create()
